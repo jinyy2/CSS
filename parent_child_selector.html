@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*모든 ul태그 아래 모든 li에 태그에 대하여 변경*/
+      ul li{
+        color: red;
+      }
+      /*">"는 id값이 lecture인 선택자의 직계자식만 변경*/
+      /*border는 직계자식, color는 상속을 받아 직계 자식의 하위값까지 변경*/
+      #lecture>li{
+        border: 1px solid red;
+        color: blue;
+      }
+      /*ul과 ol 모두 적용*/
+      ul, ol{
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li>JavaScript</li>
+    </ol>
+  </body>
+</html>
