@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*부모가 시각적인 요소가 없는 상태일 때 부모 요소의 마진값과 자신 요소의 마진값 중에 큰 쪽에 마진 값이 자식 마진 값으로 사용된다.*/
+      #parent{
+        /* border: 1px solid red; */
+        margin-top: 100px;
+      }
+      #child{
+        background-color: gray;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">
+        Hello World
+      </div>
+    </div>
+  </body>
+</html>

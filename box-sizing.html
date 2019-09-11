@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*
+      box size는 기본이 경계선에 크기를 맞추는 것이 아닌 내부에 맞춘다.
+      box-sizing: border-box를 선언함으로써 box의 크기를 경계선에 맞춘다.
+      */
+      *{
+        box-sizing: border-box;
+      }
+      div{
+        margin: 10px;
+        width: 150px;
+        box-sizing: border-box;
+      }
+      #small{
+        border: 10px solid black;
+      }
+      #large{
+        border: 30px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="small">Hello</div>
+    <div id="large">Hello</div>
+  </body>
+</html>

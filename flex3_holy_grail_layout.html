@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    /* <!DOCTYPE> html을 빼니깐 align-items: center가 작동*/
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        border: 1px solid gray;
+      }
+      /* 상단 */
+      header{
+        border-bottom: 1px solid gray;
+        padding-left: 20px;
+      }
+      /* 하단 */
+      footer{
+        border-top: 1px solid gray;
+        padding: 20px;
+      }
+      .content{
+        display: flex;
+      }
+      /* 네비게이션 */
+      .content nav{
+        border-right: 1px solid gray;
+      }
+      /* 광고 */
+      .content aside{
+        border-left: 1px solid gray;
+      }
+      nav, aside{
+        flex-basis: 200px;
+        flex-shrink: 0;
+      }
+      /* 본문 */
+      main{
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>공부중입니다.</h1>
+      </header>
+      <selection class="content">
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </nav>
+        <main>
+          예제를 통한 공부중입니다.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </main>
+        <aside>
+          AD
+        </aside>
+      </selection>
+      <footer>
+        <a href="#">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>

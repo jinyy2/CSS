@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html{
+        border: 1px solid gray;
+      }
+      div{
+        border: 5px solid tomato;
+        margin: 10px;
+      }
+      /*
+      position: static 원래 있어야하는 곳에 위치
+      position: relative 위치와 관련된 설정을 하지 않은 상태
+      */
+      #me{
+        position: static;
+        left: 100px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="parent">
+      parent
+      <div id="me">
+        me
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*style attribute -> id -> class -> tag selector  css 적용우선순위*/
+      /*!important 우선순위로 적용 무조건 쓰는게 좋은게 아님*/
+      li{
+        color: red ;
+      }
+      #id_selector{
+        color: blue ;
+      }
+      .class_selector{
+        color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="id_selector" class="class_selector" style="color:yellow">css</li>
+      <li>javascript</li>
+    </ul>
+    <ol>
+      <li>style attribute</li>
+      <li>id selector</li>
+      <li>class selector</li>
+      <li>tag selector</li>
+    </ol>
+
+  </body>
+</html>

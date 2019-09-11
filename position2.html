@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #parent, #other, #grand{
+        border: 5px solid tomato;
+      }
+      #grand{
+        position: relative;
+      }
+      /*
+      absolute는 기본값이 부모를 기준으로 생김
+      부모와의 연결관계를 끊음
+      static 아닌 부모가 나타날 때까지 무시하다가 static이 아닌 부모가 나타나면 그 부모의 위치를 기준으로 offset을 결정한다.
+      */
+      #me{
+        background-color: black;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="grand">
+      grand
+      <div id="parent">
+        parent
+        <div id="me">
+          me
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
