@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*transform: scaleX(2) x축 두 배
+      여러개의 효과를 원하면 한 줄에 써야함 따로 쓰면 나중에 것만 적용*/
+      h1{
+        background-color: deepskyblue;
+        color: white;
+        display: inline-block;
+        padding: 5px;
+        font-size: 3rem;
+        margin: 100px;
+        transfrom: scale(0.5, 0.5);
+        /* transform: scaleX(0.5) scaleY(0.5); */
+        /* transform: scaleX(0.5);
+        transform: scaleY(2); */
+      }
+      /* 추천 검색어 css transform library */
+      h1:hover{
+        transform: scale(1.5);
+        transform-origin: 100% 100%;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Transform!</h1>
+  </body>
+</html>

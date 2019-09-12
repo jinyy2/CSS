@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="fontello-5cf7f4a1/css/fontello.css">
+    <link rel="stylesheet" href="fontello-5cf7f4a1/css/animation.css">
+    <style>
+      body{
+        font-family: 'fontello';
+        color: gray;
+        font-size: 200px;
+      }
+      #test:before{
+        content: "S";
+        color: red;
+      }
+      #test:after{
+        content: "Y";
+        color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- http://fontello.com/ -->
+    <div id="test">
+      K
+    </div>
+    <!-- 0xe800 -> &#xe800 -->
+    <!-- font-family: fontello 선언 해줘야 함 -->
+    &#xe800;
+    &#xe810;
+    <!-- icon-로 시작하는 경우에 font-family를 fontello로 변경시키는 fontello.css가 존재 -->
+    <!-- animate-spin 이미지가 돌아감 -->
+    <i class="icon-emo-laugh animate-spin"></i>
+  </body>
+</html>

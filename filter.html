@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*
+      -webkit chrome, safari
+      -o opera
+      */
+      /*
+      grayscale(100%) 흑백
+      blur 블러처리
+      transition: all 1s; 1초동안 서서히 적용
+      */
+      img{
+        transition: all 1s;
+      }
+      img{
+        width: 500px;
+      }
+      img:hover{
+        -webkit-filter: grayscale(50%);
+        -o-filter: grayscale(50%);
+        filter: grayscale(50%);
+      }
+      h1{
+        -webkit-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>sky</h1>
+    <img src="images/sky.jpg" alt="">
+  </body>
+</html>
